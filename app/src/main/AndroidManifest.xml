@@ -24,8 +24,9 @@
         <activity android:name=".OkHttpActivity" />
         <activity android:name=".XMLActivity" />
         <activity android:name=".JSONActivity" />
-        <activity android:name=".LitePal.LitePalActivity"/>
-        <activity android:name=".MVP.view.MVPActivity"/>
+        <activity android:name=".LitePal.LitePalActivity" />
+        <activity android:name=".MVP.view.MVPActivity" />
+        <activity android:name=".Theme.SetThemeActivity"/>
     </application>
 
 </manifest>

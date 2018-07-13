@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.example.androidtest.LitePal.LitePalActivity;
 import com.example.androidtest.MVP.view.MVPActivity;
+import com.example.androidtest.Theme.SetThemeActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button mWebViewBtn;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button mJSONBtn;
     Button mLitePalBtn;
     Button mMVPBtn;
+    Button mThemeBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mMVPBtn=(Button)findViewById(R.id.mvp_btn);
         mMVPBtn.setOnClickListener(this);
+
+        mThemeBtn=(Button)findViewById(R.id.theme_btn);
+        mThemeBtn.setOnClickListener(this);
     }
 
     @Override
@@ -68,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }else if(id == R.id.mvp_btn){
             intent=new Intent(this,MVPActivity.class);
+            startActivity(intent);
+        }else if(id == R.id.theme_btn){
+            intent=new Intent(this, SetThemeActivity.class);
             startActivity(intent);
         }
     }
